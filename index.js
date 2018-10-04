@@ -19,7 +19,7 @@ app.post ('/encrypt', (req, res) => {
 
 app.post ('/decrypt', (req, res) => {
     var result = encryption.decrypt(req.body.encrypted);
-    console.log ("------> decrypt request", result);
+    console.log ("------> decrypted text is:", result);
     res.send(result);
 });
 
