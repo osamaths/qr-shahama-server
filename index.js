@@ -13,10 +13,12 @@ app.get('/', function(req, res){
 });
 
 app.post ('/encrypt', (req, res) => {
+    console.log ("------> encrypt request")
     res.send(encryption.encrypt(req.body.originText));
 });
 
 app.post ('/decrypt', (req, res) => {
+    console.log ("------> decrypt request")
     res.send(encryption.decrypt(req.body.encrypted));
 });
 
