@@ -5,7 +5,7 @@ var crypto = require("crypto"),
 
 var encryption = {
   encrypt: decryptedStr => {
-    // console.log("decrypted text is: ", decryptedStr);
+    console.log("decrypted text is: ", decryptedStr);
     var cipher = crypto.createCipher(algorithm, password);
     var crypted = cipher.update(decryptedStr, "utf8", "hex");
     crypted += cipher.final("hex");
@@ -13,7 +13,7 @@ var encryption = {
     return crypted;
   },
   decrypt: encryptedStr => {
-    // console.log("encrypted text is: ", encryptedStr);
+    console.log("encrypted text is: ", encryptedStr);
     var decipher = crypto.createDecipher(algorithm, password);
     var dec = decipher.update(encryptedStr, "hex", "utf8");
     dec += decipher.final("utf8");
