@@ -1,0 +1,24 @@
+{
+  "name": "qr-shahama-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/osamaths/qr-shahama-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osamaths/qr-shahama-server/issues"
+  },
+  "homepage": "https://github.com/osamaths/qr-shahama-server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "crypto": "^1.0.1",
+    "express": "^4.16.3"
+  }
+}
