@@ -18,7 +18,7 @@ app.post ('/encrypt', (req, res) => {
 });
 
 app.post ('/decrypt', (req, res) => {
-    console.log(req.body.encrypted);
+    console.log("-----------> ", req.body.encrypted);
     var result = encryption.decrypt(req.body.encrypted);
     console.log ("------> decrypted text is:", result);
     res.send(result);
