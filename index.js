@@ -18,8 +18,9 @@ app.post ('/encrypt', (req, res) => {
 });
 
 app.post ('/decrypt', (req, res) => {
-    console.log ("------> decrypt request")
-    res.send(encryption.decrypt(req.body.encrypted));
+    var result = encryption.decrypt(req.body.encrypted);
+    console.log ("------> decrypt request", result);
+    res.send(result);
 });
 
 const port = process.env.PORT || 3000;
