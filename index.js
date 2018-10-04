@@ -16,7 +16,7 @@ app.post ('/encrypt', (req, res) => {
     res.send(encryption.encrypt(req.body.originText));
 });
 
-app.post ('/encrypt', (req, res) => {
+app.post ('/decrypt', (req, res) => {
     res.send(encryption.decrypt(req.body.encrypted));
 });
 
